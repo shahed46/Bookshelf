@@ -1,0 +1,29 @@
+﻿
+@model Bookname
+
+
+<form method="post" asp-action="Delete">
+    <div class="border p-3 mt-4">
+        <div class="row pd-2">
+            <h2> Edit Book </h2>
+            <hr/>
+           <div clss="mb-3">
+                <label asp-for="BookName"></label>
+            <input asp-for="BookName" class="form-control"/>
+           
+           </div>
+
+           <div clss="mb-3">
+                <label asp-for="Author"></label>
+            <input asp-for="Author" class="form-control"/>
+             
+           </div>
+          
+        </div>
+         <button type="submit" class="btn btn-secondary" style="width:150px">Delete</button>
+           <a asp-controller="Booklist" asp-action="Index" class="btn btn-info" style="width:150px">
+               Back to list
+           </a>
+    </div>
+
+</form>
